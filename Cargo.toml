@@ -1,0 +1,30 @@
+[package]
+name = "rustbasic-macro"
+version = "0.0.1"
+edition = "2021"
+authors = ["rustbasic <timearea@naver.com>"]
+description = "Rust Basic : Planned Development"
+readme = "README.md"
+repository = "https://github.com/rustbasic/rustbasic-macro/"
+license = "MIT OR Apache-2.0"
+keywords = ["rust", "rustbasic", "basic", "wasm"]
+categories = ["rust-patterns", "wasm"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[registries.crate-io]
+protocol = "sparse"
+
+[lib]
+proc-macro = true
+path = "src/lib.rs"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 2       # Used to fast and small wasm.
+#opt-level = 3       # Used to fast.
+
+[dependencies]
+lazy_static = "1.4.0"
