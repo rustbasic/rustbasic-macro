@@ -1,6 +1,6 @@
 [package]
 name = "rustbasic-macro"
-version = "0.0.1"
+version = "0.0.2"
 edition = "2021"
 authors = ["rustbasic <timearea@naver.com>"]
 description = "Rust Basic : Planned Development"
@@ -28,3 +28,6 @@ opt-level = 2       # Used to fast and small wasm.
 
 [dependencies]
 lazy_static = "1.4.0"
+quote = "1.0.26"
+proc-macro2 = "1.0.52"
+syn = { version = "1.0.109", features = ["full"] }
