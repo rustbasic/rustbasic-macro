@@ -5,6 +5,7 @@
 // rustbasic macro - lib.rs
 // Thanks to wusyong & team ( https://github.com/wusyong/smol-potat ) for the reference.
 // Thanks to Fishrock123 & team ( https://github.com/async-rs/async-attributes ) for the reference.
+// Thanks to all the creators of the libraries used in this source code.
 #![allow(unused_doc_comments)]
 #![allow(dead_code)]
 
